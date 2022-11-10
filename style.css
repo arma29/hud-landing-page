@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+section {
+    height: 1200px;
+}
+
+.small-title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 135%;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.small-text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 159.5%;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
+.hud-base-color {
+    background: #051826;
+}
+
+.hud-green-color {
+    color: #CDFF1A;
+}
+
+.hud-blue-color {
+    background: #1F263B;
+}
+
+.hud-white-color {
+    background: #F5F8FF;
+}
+
+.drop-shadow {
+    box-shadow: -12px 22px 35px 7px #0000001F;
+}
+
+.js-navbar-bg {
+    background-color: #1a25398c;
+}
+
+.bg-img {
+    background-image: url('img/hero.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-bg-img {
+    background-image: url('img/method-frame.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.card-rounded {
+    /* background: #051826; */
+    border-radius: 40px 40px 40px 0px !important;
+}
+
+.card-rounded-top {
+    /* background: #051826; */
+    border-radius: 40px 40px 0px 0px !important;
+}
+
+.card-rounded-bottom {
+    background: #F5F5F5;
+    border-radius: 0px 0px 40px 0px !important;
+}
+
+hr {
+    background: #f5f5f5;
+    width: 50px;
+    height: 4px;
+    opacity: 1 !important;
+}
+
+
+/* Bootstrap */
+
+.nav-item {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.185em;
+}
+
+.nav-link:visited,
+.nav-link:link {
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  border-bottom: 2px solid #CDFF1A;
+}
+
+.card-body {
+    padding: 38px !important;
+}
+
+.card-title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: -0.005em;
+    text-align: left;
+}
