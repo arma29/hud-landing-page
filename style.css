@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    height: 1200px;
+    min-height: 1200px;
 }
 
 .small-title {
@@ -42,6 +42,10 @@ section {
 }
 
 .hud-base-color {
+    color: #051826;
+}
+
+.hud-base-bg-color {
     background: #051826;
 }
 
@@ -65,7 +69,7 @@ section {
     background-color: #1a25398c;
 }
 
-.bg-img {
+.bg-home-img {
     background-image: url('img/hero.png');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
@@ -74,6 +78,19 @@ section {
 
 .card-bg-img {
     background-image: url('img/method-frame.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.bg-about-gradient {
+    /* background: linear-gradient(180deg, #FFFFFF 51.36%, #E1FF76 56.41%, #DAFF54 58.32%, #D2FF33 62.42%, #CDFF1A 67.47%, #D8FF4E 76.89%, #E4FF82 79.76%, #FFFFFF 84.81%); */
+    background: linear-gradient(180deg, #FFFFFF, #E1FF76, #DAFF54, #D2FF33, #CDFF1A, #D8FF4E, #E4FF82, #FFFFFF);
+}
+
+.bg-about-img {
+    min-height: inherit;
+    background-image: url('img/about.png');
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
@@ -101,8 +118,22 @@ hr {
     opacity: 1 !important;
 }
 
+/* Section: About */
 
-/* Bootstrap */
+/* TODO: Modify logic to be able to inspect about section */
+.z-index-up {
+    z-index: 2;
+}
+
+section#about p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 180%;
+    letter-spacing: 0.01em;
+}
+
+
+/* Bootstrap overriding */
 
 .nav-item {
     font-style: normal;
