@@ -13,6 +13,3 @@ function handleNavbarBg() {
 window.onscroll = handleNavbarBg
 
 handleNavbarBg();
-
-
-

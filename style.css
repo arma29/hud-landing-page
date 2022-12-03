@@ -53,6 +53,10 @@ section {
     color: #CDFF1A;
 }
 
+.hud-green-bg-color {
+    background: #CDFF1A;
+}
+
 .hud-blue-color {
     background: #1F263B;
 }
@@ -111,26 +115,35 @@ section {
     border-radius: 0px 0px 40px 0px !important;
 }
 
-hr {
+
+/* Section: Methods */
+
+section#methods .card-body {
+    padding: 38px;
+}
+
+section#methods hr {
     background: #f5f5f5;
     width: 50px;
     height: 4px;
     opacity: 1 !important;
 }
 
-/* Section: About */
 
-/* TODO: Modify logic to be able to inspect about section */
-.z-index-up {
-    z-index: 2;
-}
+/* Section: Team */
 
-section#about p {
+section#team p {
     font-weight: 500;
     font-size: 20px;
     line-height: 180%;
     letter-spacing: 0.01em;
 }
+
+
+.z-index-up {
+    z-index: 2;
+}
+
 
 /* Section: Success Stories */
 
@@ -151,6 +164,112 @@ section#sucess-stories {
     height: 30vh;
 }
 
+/* Section: Hallmark */
+
+section#hallmark {
+    height: 1000px;
+    min-height: fit-content;
+}
+
+@media only screen and (max-width: 425px){
+    section#hallmark {
+        height: 115vh;
+    }
+}
+
+section#hallmark h3 {
+    line-height: 77px;
+    letter-spacing: -0.005em;
+}
+
+section#hallmark .card {
+    height: 21vh;
+    background-color: #EAEAEA;
+    border: none;
+}
+
+@media only screen and (min-width: 768px){
+    section#hallmark .card {
+        height: 25vh;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    section#hallmark .card {
+        height: 28vh;
+    }
+}
+
+section#hallmark .card-body {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.hallmark-div {
+    height: 60%;
+}
+
+.hallmark-card {
+    border-radius: 30px;
+}
+
+.hallmark-title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 172%;
+    letter-spacing: -0.005em;
+}
+
+.hallmark-card-title {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.005em;
+}
+
+.hallmark-card-paragraph {
+    font-size: 15px;
+    /* font-size: 17px; */ /* Sugestão*/
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+}
+
+.hallmark-card-hr {
+    width: 50px;
+    height: 4px;
+}
+
+.hallmark-paragraph {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 214%;
+    letter-spacing: -0.005em;
+}
+
+.hallmark-rectangle {
+    /* Rectangle 52 */
+    /* width: 420px; */
+    height: 80px;
+    /* Verde Hud */
+    border-radius: 52px;
+    filter: blur(45px);
+}
+
+.hallmark-btn {
+    /* Rectangle 52 */
+    /* width: 380px; */
+    height: 80px;
+    /* Verde Hud */
+    border-radius: 52px;
+}
+
+.hallmark-btn-text {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.185em;
+}
 
 /* Bootstrap overriding */
 
@@ -172,9 +291,9 @@ section#sucess-stories {
   border-bottom: 2px solid #CDFF1A;
 }
 
-.card-body {
+/* .card-body {
     padding: 38px !important;
-}
+} */
 
 .card-title {
     font-size: 35px;
