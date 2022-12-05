@@ -276,7 +276,7 @@ section#hallmark .card-body {
 /* Section: Contact */
 
 section#contact {
-    height: 1000px;
+    /* height: 1000px; */
 }
 
 .bg-contact-img {
@@ -288,11 +288,10 @@ section#contact {
 
 .bg-contact {
     background: linear-gradient(180deg, #1F263B 0%, #0A1B2A 57.41%, #051826 100%);
-    /* transform: matrix(1, 0, 0, -1, 0, 0); */
 }
 
 .contact-wrapper {
-    max-width: 1000px;
+    max-width: 800px;
 }
 
 .contact-title {
@@ -300,6 +299,12 @@ section#contact {
     font-weight: 700;
     line-height: 88px;
     letter-spacing: -0.005em;
+}
+
+@media only screen and (min-width: 1024px){
+    .contact-title {
+        white-space: nowrap;
+    }
 }
 
 .contact-subtitle {
@@ -317,7 +322,6 @@ section#contact {
 }
 
 .contact-form {
-    height: 70vh;
     max-height: 800px;
 }
 
