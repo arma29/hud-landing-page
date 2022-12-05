@@ -14,10 +14,6 @@ body {
     font-style: normal;
 }
 
-section {
-    min-height: 1200px;
-}
-
 .small-title {
     font-weight: 700;
     font-size: 23px;
@@ -67,6 +63,12 @@ section {
 
 .drop-shadow {
     box-shadow: -12px 22px 35px 7px #0000001F;
+}
+
+/* Section: Home */
+
+section#home {
+    min-height: 1000px;
 }
 
 .js-navbar-bg {
@@ -148,7 +150,7 @@ section#team p {
 /* Section: Success Stories */
 
 section#sucess-stories {
-    min-height: 700px;
+    margin-bottom: 10rem;
 }
 
 .drop-shadow-carousel {
@@ -167,14 +169,7 @@ section#sucess-stories {
 /* Section: Hallmark */
 
 section#hallmark {
-    height: 1000px;
-    min-height: fit-content;
-}
-
-@media only screen and (max-width: 425px){
-    section#hallmark {
-        height: 115vh;
-    }
+    padding: 5rem 0 5rem 0;
 }
 
 section#hallmark h3 {
