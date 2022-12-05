@@ -173,31 +173,15 @@ section#sucess-stories {
 
 /* Section: Hallmark */
 
-section#hallmark {
-    padding: 5rem 0 5rem 0;
-}
-
 section#hallmark h3 {
     line-height: 77px;
     letter-spacing: -0.005em;
 }
 
 section#hallmark .card {
-    height: 21vh;
+    height: 280px;
     background-color: #EAEAEA;
     border: none;
-}
-
-@media only screen and (min-width: 768px){
-    section#hallmark .card {
-        height: 25vh;
-    }
-}
-
-@media only screen and (min-width: 1200px){
-    section#hallmark .card {
-        height: 28vh;
-    }
 }
 
 section#hallmark .card-body {
@@ -207,8 +191,6 @@ section#hallmark .card-body {
 
 .hallmark-div {
     height: 60%;
-    /* padding-top: 5rem; */
-    /* padding-bottom: 5rem; */
 }
 
 .hallmark-card {
@@ -223,18 +205,27 @@ section#hallmark .card-body {
 }
 
 .hallmark-card-title {
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: 700;
     line-height: 34px;
     letter-spacing: -0.005em;
 }
 
 .hallmark-card-paragraph {
-    font-size: 15px;
-    /* font-size: 17px; */ /* Sugestão*/
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 0em;
+}
+
+@media only screen and (min-width: 576px){
+    .hallmark-card-title{
+        font-size: 1.7rem;
+    }
+
+    .hallmark-card-paragraph {
+        font-size: 1.1rem;
+    }
 }
 
 .hallmark-card-hr {
