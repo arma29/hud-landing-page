@@ -10,9 +10,11 @@ html {
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
 }
+
+
 
 .small-title {
     font-weight: 700;
@@ -335,6 +337,19 @@ section#contact {
 }
 
 /* Bootstrap overriding */
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.pt-6 {
+    padding-top: 5rem;
+}
+
+.mt-n1 {
+    margin-top: -1px;
+}
 
 .nav-item {
     font-style: normal;
