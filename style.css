@@ -11,7 +11,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    /* font-style: normal; */
 }
 
 
@@ -369,9 +369,9 @@ section#contact {
   border-bottom: 2px solid #CDFF1A;
 }
 
-/* .card-body {
-    padding: 38px !important;
-} */
+.navbar-toggler-icon {
+    width: 2.3rem;
+}
 
 .card-title {
     font-size: 35px;
