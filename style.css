@@ -1,3 +1,11 @@
+/* #region Global */
+
+:root {
+    --screen-sm: 576px;
+    --sreeen-md: 768px;
+    --screen-lg: 992px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +15,27 @@
 html {
     height: 100%;
     width: 100%;
-}
-
-body {
     font-family: 'Poppins', sans-serif;
-    /* font-style: normal; */
+    font-weight: 400;
+    font-size: 12px;
 }
 
 
+@media only screen and (min-width: 768px){
+    html {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    html {
+        font-size: 16px;
+    }
+}
+
+/* #endregion */
+
+/* #region Common styles*/
 
 .small-title {
     font-weight: 700;
@@ -71,42 +92,99 @@ body {
     box-shadow: -12px 22px 35px 7px #0000001F;
 }
 
-/* Section: Home */
+.bg-cover {
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* #endregion */
+
+/* #region Section: Home */
 
 section#home {
-    min-height: 1000px;
+    padding: 18.75rem 0 18.75rem 0;
+}
+
+section#home h1 {
+    font-size: 2.375rem; /*38px*/
+    font-weight: 300;
+    line-height: 2.875rem;
+    letter-spacing: 0.73rem;
+}
+
+/* TODO: transition kind like typing */
+section#home h2 {
+    font-size: 4.375rem; /*70px*/
+    font-weight: 600;
+}
+
+/*Loop fadeIn fadeOut*/
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+  }
+
+.home-span {
+    font-size: 4.0625rem; /*65px*/
+    font-weight: 600;
+
+    animation: fadeIn 0.4s infinite alternate;
+}
+
+.home-div {
+    margin-bottom: 350px;
+}
+
+.home-btn {
+    font-size: 1.1875rem;
+    font-weight: 600;
+    line-height: 1.625rem;
+    letter-spacing: 0.185rem;
+    border: 2px solid #CDFF1A;
+    background: transparent;
+    padding: 0.9rem 3rem;
+
+    border-radius: 29px;
+    border-color: #CDFF1A;
+    color: white;
+
+    transition: all 0.2s linear;
+}
+
+.home-btn:hover {
+    opacity: 0.85;
+    border-color: white;
+    background-color: #CDFF1A;
+    color: #051826;
+
+    transition: all 0.2s linear;
 }
 
 .js-navbar-bg {
     background-color: #1a25398c;
 }
 
-/* TODO: split in two classes: URL and background cover */
 .bg-home-img {
     background-image: url('img/hero.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+/* #endregion */
+
+/* #region Section: Methods */
+
+section#methods .card-body {
+    padding: 38px;
+}
+
+section#methods hr {
+    background: #f5f5f5;
+    width: 50px;
+    height: 4px;
+    opacity: 1 !important;
 }
 
 .card-bg-img {
     background-image: url('img/method-frame.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
-}
-
-.bg-about-gradient {
-    /* background: linear-gradient(180deg, #FFFFFF 51.36%, #E1FF76 56.41%, #DAFF54 58.32%, #D2FF33 62.42%, #CDFF1A 67.47%, #D8FF4E 76.89%, #E4FF82 79.76%, #FFFFFF 84.81%); */
-    background: linear-gradient(180deg, #FFFFFF, #E1FF76, #DAFF54, #D2FF33, #CDFF1A, #D8FF4E, #E4FF82, #FFFFFF);
-}
-
-.bg-about-img {
-    min-height: inherit;
-    background-image: url('img/about.png');
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
 }
 
 .card-rounded {
@@ -124,22 +202,9 @@ section#home {
     border-radius: 0px 0px 40px 0px !important;
 }
 
+/* #endregion */
 
-/* Section: Methods */
-
-section#methods .card-body {
-    padding: 38px;
-}
-
-section#methods hr {
-    background: #f5f5f5;
-    width: 50px;
-    height: 4px;
-    opacity: 1 !important;
-}
-
-
-/* Section: Team */
+/* #region Section: Team */
 
 section#team p {
     font-weight: 500;
@@ -148,13 +213,18 @@ section#team p {
     letter-spacing: 0.01em;
 }
 
+.bg-about-gradient {
+    /* background: linear-gradient(180deg, #FFFFFF 51.36%, #E1FF76 56.41%, #DAFF54 58.32%, #D2FF33 62.42%, #CDFF1A 67.47%, #D8FF4E 76.89%, #E4FF82 79.76%, #FFFFFF 84.81%); */
+    background: linear-gradient(180deg, #FFFFFF, #E1FF76, #DAFF54, #D2FF33, #CDFF1A, #D8FF4E, #E4FF82, #FFFFFF);
+}
 
 .z-index-up {
     z-index: 2;
 }
 
+/* #endregion */
 
-/* Section: Success Stories */
+/* #region Section: Success Stories */
 
 section#sucess-stories {
     margin-bottom: 10rem;
@@ -173,7 +243,9 @@ section#sucess-stories {
     height: 30vh;
 }
 
-/* Section: Hallmark */
+/* #endregion */
+
+/* #region Section: Hallmark */
 
 section#hallmark h3 {
     line-height: 77px;
@@ -266,7 +338,9 @@ section#hallmark .card-body {
     letter-spacing: 0.185em;
 }
 
-/* Section: Contact */
+/* #endregion */
+
+/* #region Section: Contact */
 
 section#contact {
     /* height: 1000px; */
@@ -336,7 +410,9 @@ section#contact {
     max-width: 280px;
 }
 
-/* Bootstrap overriding */
+/* #endregion */
+
+/* #region Bootstrap overriding */
 
 .py-6 {
     padding-top: 6rem;
@@ -352,10 +428,9 @@ section#contact {
 }
 
 .nav-item {
-    font-style: normal;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
-    line-height: 27px;
+    line-height: 1.6875rem;
     letter-spacing: 0.185em;
 }
 
@@ -399,3 +474,5 @@ section#contact {
 .carousel-item {
     height: 100% !important;
 }
+
+/* #endregion */
