@@ -17,9 +17,14 @@ html {
     width: 100%;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10.5px;
 }
 
+@media only screen and (min-width: 576px){
+    html {
+        font-size: 12px;
+    }
+}
 
 @media only screen and (min-width: 768px){
     html {
@@ -37,9 +42,17 @@ html {
 
 /* #region Common styles*/
 
+.title {
+    font-weight: 700;
+    font-size: 3.125rem;
+    line-height: 159.5%;
+    letter-spacing: -0.005em;
+    color: #000000;
+}
+
 .small-title {
     font-weight: 700;
-    font-size: 23px;
+    font-size: 1.4375rem;
     line-height: 135%;
     letter-spacing: -0.005em;
     color: #000000;
@@ -47,18 +60,11 @@ html {
 
 .small-text {
     font-weight: 400;
-    font-size: 15px;
-    line-height: 29px;
+    font-size: 0.9375rem;
+    line-height: 1.8125rem;
     color: #000000;
 }
 
-.title {
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 159.5%;
-    letter-spacing: -0.005em;
-    color: #000000;
-}
 
 .hud-base-color {
     color: #051826;
@@ -103,7 +109,7 @@ html {
 /* #region Section: Home */
 
 section#home {
-    padding: 18.75rem 0 18.75rem 0;
+    padding: 16.75rem 0 40.75rem 0;
 }
 
 section#home h1 {
@@ -129,10 +135,6 @@ section#home h2 {
     font-weight: 600;
 
     animation: fadeIn 0.4s infinite alternate;
-}
-
-.home-div {
-    margin-bottom: 350px;
 }
 
 .home-btn {
@@ -445,7 +447,8 @@ section#contact {
 }
 
 .navbar-toggler-icon {
-    width: 2.3rem;
+    width: 2.7rem;
+    height: 2.7rem;
 }
 
 .card-title {
