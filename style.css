@@ -172,9 +172,43 @@ section#methods {
     padding-bottom: 5rem;
 }
 
-section#methods .card {
+div#md-block .card {
     width: 23.375rem;
     margin: auto;
+}
+
+div#xs-block .card {
+    width: 85%;
+    max-width: 350px;
+    min-height: 310px;
+    margin: auto;
+}
+
+div#xs-block .carousel-control-next-icon, div#xs-block .carousel-control-prev-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: 2rem;
+}
+
+div#xs-block .carousel-control-next-icon {
+    margin-left: 2.5rem;
+
+}
+
+div#xs-block .carousel-control-prev-icon {
+    margin-right: 2.5rem;
+
+}
+
+@media only screen and (min-width: 475px){
+    div#xs-block .carousel-control-next-icon, div#xs-block .carousel-control-prev-icon{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+div#xs-block .small-text {
+    font-size: 1.1rem;
 }
 
 section#methods .card-body {
@@ -224,7 +258,7 @@ section#team p {
 
 /* #region Section: Success Stories */
 
-section#sucess-stories {
+section#success-stories {
     margin-bottom: 10rem;
 }
 
@@ -239,6 +273,25 @@ section#sucess-stories {
 
 .height-carousel {
     height: 30vh;
+}
+
+section#success-stories .carousel-indicators {
+    bottom: -90px !important;
+}
+
+section#success-stories .carousel-indicators [data-bs-target] {
+    border-radius: 50% !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 0.2 !important;
+}
+
+section#success-stories .carousel-indicators .active {
+    opacity: 1 !important;
+}
+
+section#success-stories .carousel-item {
+    height: 100% !important;
 }
 
 /* #endregion */
@@ -455,23 +508,6 @@ section#contact {
     text-align: left;
 }
 
-.carousel-indicators {
-    bottom: -90px !important;
-}
 
-.carousel-indicators [data-bs-target] {
-    border-radius: 50% !important;
-    width: 15px !important;
-    height: 15px !important;
-    opacity: 0.2 !important;
-}
-
-.carousel-indicators .active {
-    opacity: 1 !important;
-}
-
-.carousel-item {
-    height: 100% !important;
-}
 
 /* #endregion */
