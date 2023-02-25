@@ -261,7 +261,6 @@ section#team {
 @media only screen and (min-width: 576px){
     .team-frame {
         top: 0;
-        /* width: auto; */
         height: auto;
     }   
 }
@@ -287,20 +286,29 @@ section#team {
 /* #region Section: Success Stories */
 
 section#success-stories {
-    margin-bottom: 10rem;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
 }
 
 .drop-shadow-carousel {
-    box-shadow: 0px 0px 103px 0px #00000040;
+    box-shadow: 0px 0px 6.4375rem 0px #00000040;
 }
 
 .border-carousel {
     background: #D9D9D9;
-    border-radius: 75px;
+    border-radius: 4.6875rem;
 }
 
-.height-carousel {
-    height: 30vh;
+.carousel-dimensions {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+@media only screen and (min-width: 768px){
+    .carousel-dimensions {
+        max-width: 1420px;
+        max-height: 375px;
+    }   
 }
 
 section#success-stories .carousel-indicators {
@@ -320,6 +328,10 @@ section#success-stories .carousel-indicators .active {
 
 section#success-stories .carousel-item {
     height: 100% !important;
+}
+
+section#success-stories .carousel-control-next, section#success-stories .carousel-control-prev {
+    bottom: 20%;
 }
 
 /* #endregion */
