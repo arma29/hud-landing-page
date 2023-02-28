@@ -287,7 +287,13 @@ section#team {
 
 section#success-stories {
     padding-top: 8rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
+}
+
+@media only screen and (min-width: 1200px){
+    section#success-stories {
+        padding-bottom: 10rem;
+    }
 }
 
 .drop-shadow-carousel {
@@ -338,94 +344,104 @@ section#success-stories .carousel-control-next, section#success-stories .carouse
 
 /* #region Section: Hallmark */
 
-section#hallmark h3 {
-    line-height: 77px;
-    letter-spacing: -0.005em;
-}
-
-section#hallmark .card {
-    height: 280px;
-    background-color: #EAEAEA;
-    border: none;
+section#hallmark {
+    padding-top: 3rem;
+    padding-bottom: 11rem;
 }
 
 section#hallmark .card-body {
     padding-left: 2rem;
-    padding-right: 2rem;
-}
-
-.hallmark-div {
-    height: 60%;
 }
 
 .hallmark-card {
+    max-width: 21.875rem;
+    height: 100%;
+    min-height: 256px;
+    margin: auto;
+    background-color: #EAEAEA;
     border-radius: 30px;
+    border: none;
 }
 
 .hallmark-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 2.8125rem;
     line-height: 172%;
     letter-spacing: -0.005em;
 }
 
-.hallmark-card-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 34px;
-    letter-spacing: -0.005em;
-}
-
-.hallmark-card-paragraph {
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
-}
-
-@media only screen and (min-width: 576px){
-    .hallmark-card-title{
-        font-size: 1.7rem;
-    }
-
-    .hallmark-card-paragraph {
-        font-size: 1.1rem;
-    }
-}
-
-.hallmark-card-hr {
-    width: 50px;
-    height: 4px;
-}
-
-.hallmark-paragraph {
+.hallmark-subtitle {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 1.875rem;
     line-height: 214%;
     letter-spacing: -0.005em;
 }
 
+.hallmark-card-title {
+    font-size: 1.5625rem;
+    font-weight: 700;
+    line-height: 135%;
+    letter-spacing: -0.005em;
+}
+
+.hallmark-card-paragraph {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    letter-spacing: 0em;
+}
+
+@media only screen and (min-width: 768px){
+    .hallmark-card {
+        min-height: 17.5rem;
+    }
+    .hallmark-card-paragraph {
+        font-size: 0.9375rem;
+    }
+}
+
+.hallmark-card-pic {
+    object-fit: contain;
+    width: 70px;
+    height: 70px;
+}
+
+.hallmark-card-hr {
+    width: 3.125rem;
+    height: 4px;
+}
+
+.hallmark-blur {
+    filter: blur(1rem);
+}
+
 .hallmark-rectangle {
-    /* Rectangle 52 */
-    /* width: 420px; */
     height: 80px;
-    /* Verde Hud */
-    border-radius: 52px;
-    filter: blur(45px);
+    border-radius: 3.25rem;
+    filter: blur(2.8125rem);
 }
 
 .hallmark-btn {
-    /* Rectangle 52 */
-    /* width: 380px; */
-    height: 80px;
-    /* Verde Hud */
-    border-radius: 52px;
+    width: 25rem;
+    height: 5rem;
+    border-radius: 3.25rem;
+
+    transition: all 0.1s linear;
+}
+
+button.hallmark-btn:hover {
+    background-color: white;
+    border: 1px solid black !important;
+    background: white;
+    /* color: #051826; */
+
+    transition: all 0.1s linear;
 }
 
 .hallmark-btn-text {
-    font-size: 19px;
+    font-size: 1.1875rem;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 136.5%;
     letter-spacing: 0.185em;
 }
 
