@@ -416,28 +416,27 @@
     </div>
   </section>
   <section id="contact" class="bg-contact">
-    <div class="bg-contact-img h-100 d-flex flex-column justify-content-center py-6">
+    <div class="bg-cover bg-contact-img h-100 d-flex flex-column justify-content-center py-6">
       <div class="d-flex justify-content-center align-items-center">
-        <div class="contact-wrapper text-center w-75 pb-md-3">
-          <h2 class="contact-title hud-green-color">E aí, topa iniciar uma parceria?</h2>
-          <h3 class="contact-subtitle hud-white-color pb-5">Preencha abaixo e seja um dos nossos cases de sucesso.</h3>
+        <div class="contact-wrapper container text-center pb-md-3">
+          <h3 class="contact-title hud-green-color">E aí, topa iniciar uma parceria?</h3>
+          <h4 class="contact-subtitle hud-white-color pb-5">Preencha abaixo e seja um dos nossos cases de sucesso.</h4>
           <form class="contact-form d-flex flex-column justify-content-evenly">
-            <div class="mb-3">
+            <div class="mb-5">
               <label for="name" class="form-label contact-form-label hud-green-color mb-4">Nome e sobrenome</label>
-              <input type="text" class="contact-form-control p-5" id="name">
+              <input type="text" class="contact-form-control px-5" id="name" name="phone" required>
             </div>
-            <div class="mb-3">
+            <div class="mb-5">
               <label for="phone" class="form-label contact-form-label hud-green-color mb-4">Telefone</label>
-              <input type="tel" class="contact-form-control p-5" id="phone">
+              <input type="tel" class="contact-form-control px-5" id="phone" name="phone" required>
             </div>
             <div class="mb-5">
               <label for="email" class="form-label contact-form-label hud-green-color mb-4">E-mail</label>
-              <input type="email" class="contact-form-control p-5" id="email">
+              <input type="email" class="contact-form-control px-5" id="email" name="email" required=>
             </div>
-            <div class="position-relative d-flex justify-content-center">
-              <div class="contact-rectangle hallmark-rectangle hud-green-bg-color w-50"></div>
-              <button type="submit"
-                class="contact-rectangle hallmark-btn hallmark-btn-text hud-green-bg-color text-center position-absolute top-0 border-0 w-50">Enviar</button>
+            <div class="position-relative d-flex justify-content-center mt-3">
+              <div class="contact-rectangle hallmark-rectangle hud-green-bg-color"></div>
+              <button type="submit" class="contact-rectangle hallmark-btn hallmark-btn-text hud-green-bg-color text-center position-absolute top-0 border-0">Enviar</button>
             </div>
           </form>
         </div>
