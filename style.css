@@ -421,11 +421,17 @@ section#hallmark .card-body {
 }
 
 .hallmark-btn {
-    width: 25rem;
+    width: 23rem;
     height: 5rem;
     border-radius: 3.25rem;
 
     transition: all 0.1s linear;
+}
+
+@media only screen and (min-width: 576px){
+    .hallmark-btn {
+        width: 25rem;
+    }
 }
 
 button.hallmark-btn:hover {
