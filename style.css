@@ -105,18 +105,18 @@ body {
 
 /* #region Section: Home */
 
-section#home {
+.home-wrapper {
     padding: 16.75rem 0 40.75rem 0;
 }
 
-section#home h1 {
+.home-h1 {
     font-size: 2.375rem; /*38px*/
     font-weight: 300;
     line-height: 2.875rem;
     letter-spacing: 0.33em;
 }
 
-section#home h2 {
+.home-h2 {
     font-size: 4.375rem; /*70px*/
     font-weight: 600;
 }
