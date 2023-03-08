@@ -434,9 +434,9 @@ section#hallmark .card-body {
     }
 }
 
-button.hallmark-btn:hover {
+button.hallmark-btn:hover, a.hallmark-btn:hover {
     background-color: white;
-    border: 1px solid black !important;
+    /* border: 1px solid black !important; */
     background: white;
     /* color: #051826; */
 
