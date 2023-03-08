@@ -162,7 +162,9 @@ body {
 }
 
 .bg-home-img {
+    background-color: #051826;
     background-image: url('img/hero.webp');
+    background-color: rgb(0,0,0,0);
 }
 
 /* #endregion */

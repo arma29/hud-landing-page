@@ -12,4 +12,6 @@ function handleNavbarBg() {
 
 window.onscroll = handleNavbarBg
 
-handleNavbarBg();
+window.addEventListener('DOMContentLoaded', (event) => {
+  handleNavbarBg();
+});
